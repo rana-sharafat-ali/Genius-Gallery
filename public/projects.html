@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/stylesheet.css" />
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <title>Projects</title>
+</head>
+<body>
+    <div class="m-2 position-relative">
+        <header>
+          <nav class="nav navbar navbar-expand-lg m-2 fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand h1 glow-red" href="../index.html"
+                ><span class="white">Genius</span>
+                <span class="red">Gallery</span></a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ms-auto mb-2">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../public/contact-me.html">Contact Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../public/projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../public/about-me.html">About Me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <main>
+          <div class="text-black position-relative">
+            <h1 class="pp-h1">My Projects Showcase Page</h1>
+            <p class="pp-p">I am CS student at Islamia University Bahawalpur. This site is visual collection of some of my projects. Welcome!</p>
+
+            <a href="https://rana-sharafat-ali.github.io/css-challenges/"><div class="pp-box border d-flex mb-5">
+              <div class="child-1 me-5 m-1"><img class="p-img" src="../assets/img/challenges in css.png" alt=""></div>
+              <div class="child-2 m-1 ms-5"><h1>Css Challenges Class Assignment</h1><p>In this project assignment all the css challenges are solved. there are different types of challenges like playing with colors and text etc. in this project the HTML and Css code is also provided.</p></div>
+            </div>
+          </a>
+
+            <a href="https://rana-sharafat-ali.github.io/Portfolio/"><div class="pp-box border d-flex mb-5">
+              <div class="child-1 me-5 m-1"><img class="p-img" src="../assets/img/portfolio assignment.png" alt=""></div>
+              <div class="child-2 m-1 ms-5"><h1>Portfolio Assignment Github</h1><p>During this lab Project I have learn how to create a repositry in github and host my code on github repositry. In this way we can show our skills to anyone.</p></div>
+            </div>
+     </a>
+
+            <a href="https://rana-sharafat-ali.github.io/responsive-page-flex/"><div class="pp-box border d-flex mb-5">
+              <div class="child-1 me-5 m-1"><img class="p-img" src="../assets/img/responsive page flex.png" alt=""></div>
+              <div class="child-2 m-1 ms-5"><h1>Responsive Page using Flex</h1><p>This is an assignment project in which I use bootstrap classes to create a web page and make it responsive by using only bootstrap classes . This is done using Flex classes.</p></div>
+            </div>
+          </a>
+
+            <a href="https://rana-sharafat-ali.github.io/responsive-page-grid/"><div class="pp-box border d-flex mb-5">
+              <div class="child-1 me-5 m-1"><img class="p-img" src="../assets/img/responsive page grid.png" alt=""></div>
+              <div class="child-2 m-1 ms-5"><h1>Responsive Page using Grid</h1><p>This is also an assignment project in which I use bootstrap classes to create a web page and make it responsive by using only bootstrap classes . This is done using Grid classes row and column.</p></div>
+            </div>
+          </a>
+            
+          <a href="https://rana-sharafat-ali.github.io/cat-facts/"><div class="pp-box border d-flex mb-5">
+              <div class="child-1 me-5 m-1"><img class="p-img" src="../assets/img/facts-mini-project.png" alt=""></div>
+              <div class="child-2 m-1 ms-5"><h1>Cat Facts using API fetch</h1><p>In this mini project i use fetch API and json () to get responase from API and show it on the web page</p></div>
+            </div>
+          </a>
+          
+          <a href="https://rana-sharafat-ali.github.io/color-changer-js-mini-project/"><div class="pp-box border d-flex mb-5">
+              <div class="child-1 me-5 m-1"><img class="p-img" src="../assets/img/color-chainger mini project.png" alt=""></div>
+              <div class="child-2 m-1 ms-5"><h1>Color Changer</h1><p>In this mini Project is about changing background color by hovering the mouse on the color. this is done by just manuplating some events </p></div>
+            </div>
+          </a>
+
+           
+
+
+          <div id="responseDataDiv"></div>
+
+          <form class="border p-4">
+              <h1 class="h3">Add New Project</h1> <br>
+              <label class="m-1" for="project-name">Project Name:</label>
+              <input class="m-1 p-name" type="text">
+
+              <label class="m-1" for="project-description">Project Description:</label>
+              <input class="m-1 p-description" type="text">
+
+              <label class="m-1" for="project-link">Project Link:</label>
+              <input class="m-1 p-link" type="text">
+              
+              <br>
+              <label class="m-1" for="project-Image">Project Image url</label>
+              <input class="p-image m-1 " type="text">
+              
+              <br>
+              <button id="button" class="btn btn-outline-success m-2">Add Project</button>
+              
+              
+              <div id="added"></div>
+          </form>
+          <button id="clear" class="btn btn-outline-danger m-2">Clear All Projects</button>
+          
+          
+          </div>
+        </main>
+
+        <footer>
+          <div class="py-3 my-3 border-top text-center">
+            <p>© 2024 Genius Gallery</p>
+            <a href="http://wa.me/+923006357871"
+              ><img
+                class="s-logo me-2"
+                src="../assets/img/whatsapp-footer-icon.png"
+                alt="whatsapp logo"
+            /></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100005140546578&mibextid=ZbWKwL"
+              ><img
+                class="s-logo me-2"
+                src="../assets/img/facebook-footer-icon.png"
+                alt="facebook logo"
+            /></a>
+            <a
+              href="https://www.instagram.com/ranasharafat_ali?igsh=MXJrb3AxMjgxcTdmcQ=="
+              ><img
+                class="s-logo me-2"
+                src="../assets/img/instagram-footer-icon.png"
+                alt="instagram logo"
+            /></a>
+            <a
+              href="https://www.snapchat.com/add/raosaifali?share_id=ay4cS0GsqOg&locale=en-GB"
+              ><img
+                class="s-logo"
+                src="../assets/img/snapchat-footer-icon.png"
+                alt="snapchat logo"
+            /></a>
+          </div>
+        </footer>
+      </div>
+      <script src="../assets/js/script.js"></script>
+</body>
+</html>
